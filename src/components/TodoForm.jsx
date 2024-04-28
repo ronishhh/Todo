@@ -8,7 +8,6 @@ import {
   updateTodo,
 } from "../state/TodoSlice";
 import { toast } from "react-toastify";
-import { useMemo } from "react";
 
 export default function TodoForm() {
   const dispatch = useDispatch();
@@ -16,10 +15,9 @@ export default function TodoForm() {
   const isEditing = useSelector((state) => state.todo.isEditing);
   const todoData = useSelector((state) => state.todo.todoData);
   const todoLists = useSelector((state) => state.todo.todoLists);
-  const uniqueUserIds = useMemo(
-    () => [...new Set(todoLists.map((todo) => todo.completed.toString()))],
-    [todoLists]
-  );
+  const uniqueUserIds = [
+    ...new Set(todoLists.map((todo) => todo.completed.toString())),
+  ];
   uniqueUserIds.unshift("All");
 
   const {
