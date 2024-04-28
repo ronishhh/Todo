@@ -39,11 +39,12 @@ To get started with the project, follow these steps:
 
 The application should now be running locally on your machine. You can access it by navigating to http://localhost:3000 in your web browser.
 
-Usage
+## Usage
+
 Once the development server is running, you can start using the Todo application. Here are some key features:
 
-Add Todo: Enter a new todo item in the input field and press Enter to add it to the list.
-Edit Todo: Click on the "Edit" button next to a todo item to edit its title.
-Toggle Todo: Click on the checkbox next to a todo item to toggle its completion status.
-Delete Todo: Click on the "Delete" button next to a todo item to delete it from the list.
-Filter Todos: Use the dropdown menu to filter todo items based on their completion status.
+- **Add Todo**: Enter a new todo item in the input field and press Enter to add it to the list.
+- **Edit Todo**: Click on the "Edit" button next to a todo item to edit its title.
+- **Toggle Todo**: Click on the checkbox next to a todo item to toggle its completion status.
+- **Delete Todo**: Click on the "Delete" button next to a todo item to delete it from the list.
+- **Filter Todos**: Use the dropdown menu to filter todo items based on their completion status.
