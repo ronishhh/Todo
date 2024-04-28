@@ -83,7 +83,11 @@ export default function TodoForm() {
         <select {...register("Id")} id="select-filter" onClick={filterBySelect}>
           {uniqueUserIds.map((value, index) => (
             <option key={index} value={value}>
-              {value.toUpperCase()}
+              {value == "true"
+                ? "COMPLETED"
+                : value == "false"
+                ? "NOT COMPLETED"
+                : value.toUpperCase()}
             </option>
           ))}
         </select>
